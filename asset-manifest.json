@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/spdload-test/static/css/main.9a16f77d.css",
-    "main.js": "/spdload-test/static/js/main.c4d9e711.js",
+    "main.js": "/spdload-test/static/js/main.16342bce.js",
     "index.html": "/spdload-test/index.html",
     "main.9a16f77d.css.map": "/spdload-test/static/css/main.9a16f77d.css.map",
-    "main.c4d9e711.js.map": "/spdload-test/static/js/main.c4d9e711.js.map"
+    "main.16342bce.js.map": "/spdload-test/static/js/main.16342bce.js.map"
   },
   "entrypoints": [
     "static/css/main.9a16f77d.css",
-    "static/js/main.c4d9e711.js"
+    "static/js/main.16342bce.js"
   ]
 }
