@@ -28,7 +28,7 @@ const TourRemoveButtons: React.FC<{ tour: ITour }> = (props) => {
                 width="calc(100% - 63px)"
             />
             <Button onClick={changeFavorites}>
-                <GraySquare imageLink="/images/trash.svg" />
+                <GraySquare imageLink={process.env.PUBLIC_URL + "/images/trash.svg"} />
             </Button>
         </FlexWrapper>
     )

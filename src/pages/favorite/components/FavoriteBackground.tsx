@@ -7,7 +7,7 @@ const FavoriteBackground: React.FC = () => {
             width="100%"
             height="100%"
             objectFit="cover"
-            src="/images/favoriteImage.png"
+            src={process.env.PUBLIC_URL + "/images/favoriteImage.png"}
         />
     )
 }

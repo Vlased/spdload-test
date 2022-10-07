@@ -8,16 +8,18 @@ const Aside: React.FC = () => {
   const location = useLocation();
 
   const getImageLink = useCallback(() => {
-    return location.pathname.split("/").includes("favorite") ? "/images/whiteHeart.svg" : "/images/blackHeart.svg";
-  }, [location]) 
+    return location.pathname.split("/").includes("favorite") ?
+      process.env.PUBLIC_URL + "/images/whiteHeart.svg" :
+      process.env.PUBLIC_URL + "/images/blackHeart.svg";
+  }, [location])
 
   return (
     <FlexWrapper gap="10px">
       <Link to="/favorite">
-        <GraySquare 
-            imageLink={getImageLink()} 
-            isPink={location.pathname.split("/").includes("favorite")}
-          />
+        <GraySquare
+          imageLink={getImageLink()}
+          isPink={location.pathname.split("/").includes("favorite")}
+        />
       </Link>
       <BlueButton
         text="SIGN IN"

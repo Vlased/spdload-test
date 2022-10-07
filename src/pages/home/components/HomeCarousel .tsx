@@ -54,10 +54,10 @@ const HomeCarousel: React.FC = () => {
                 </Text>
                 <FlexWrapper gap="20px">
                     <button ref={navigationPrevRef}>
-                        <GraySquare imageLink="/images/arrowBack.svg" />
+                        <GraySquare imageLink={process.env.PUBLIC_URL + "/images/arrowBack.svg"} />
                     </button>
                     <button ref={navigationNextRef}>
-                        <GraySquare imageLink="/images/arrowForward.svg" />
+                        <GraySquare imageLink={process.env.PUBLIC_URL + "/images/arrowForward.svg"} />
                     </button>
                 </FlexWrapper>
             </FlexWrapper>

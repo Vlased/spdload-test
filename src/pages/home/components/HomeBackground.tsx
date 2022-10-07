@@ -33,7 +33,7 @@ const HomeBackground: React.FC<HomeBackgroundProps> = (props) => {
     const homeSlides = useMemo(() => {
         const result = [];
         for(let i = 1; i < 4; i++){
-            let imageLink = `/images/homeImage${i}.png`
+            let imageLink = process.env.PUBLIC_URL + `/images/homeImage${i}.png`
             result.push(
                 <SwiperSlide key={imageLink}>
                     <Image 
@@ -82,7 +82,7 @@ const HomeBackground: React.FC<HomeBackgroundProps> = (props) => {
                 <Image
                     width="100%"
                     height="100%"
-                    src="/images/exploreTours.png"
+                    src={process.env.PUBLIC_URL + "/images/exploreTours.png"}
                 />
             </Button>
         </>

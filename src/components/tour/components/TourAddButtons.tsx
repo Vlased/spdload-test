@@ -19,7 +19,9 @@ const TourAddButtons: React.FC<{ tour: ITour }> = (props) => {
 
     const getImageLink = useCallback(() => {
         const { tour } = props;
-        return favoriteTours.some(favoriteTour => favoriteTour.id === tour.id) ?  "/images/whiteHeart.svg" : "/images/blackHeart.svg";
+        return favoriteTours.some(favoriteTour => favoriteTour.id === tour.id) ?
+            process.env.PUBLIC_URL + "/images/whiteHeart.svg" :
+            process.env.PUBLIC_URL + "/images/blackHeart.svg";
     }, [props, favoriteTours])
 
     return (

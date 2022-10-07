@@ -9,7 +9,7 @@ const Logo: React.FC = () => {
                 width="auto"
                 height="220px"
                 objectFit="contain"
-                src="/images/PngItem_6781246.png"
+                src={process.env.PUBLIC_URL + "/images/PngItem_6781246.png"}
             />
         </Link>
     )

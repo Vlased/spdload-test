@@ -5,7 +5,6 @@ interface IStyledHeaderLinkProps {
     children: React.ReactNode;
     isCurrent: boolean;
 }
-  
 
 export const styledHeaderLink = styled(Text)`
 line-height: 19px;
