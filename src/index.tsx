@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createGlobalStyle } from 'styled-components';
 import App from './App';
-import {HashRouter as Router} from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import { RecoilRoot } from 'recoil';
 
 const Global = createGlobalStyle`
@@ -29,8 +29,6 @@ button {
   cursor: pointer;
   border: none;
 }
-
-
 ` 
 
 const root = ReactDOM.createRoot(

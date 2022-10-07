@@ -23,6 +23,7 @@ const HomeBackground: React.FC<HomeBackgroundProps> = (props) => {
 
     useEffect(() => {
         const interval = setInterval(() => {
+            console.log("timer");
             if(navigationNextRef.current){
                 navigationNextRef.current.click();
             }
