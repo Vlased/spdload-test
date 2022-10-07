@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/spdload-test/static/css/main.9a16f77d.css",
+    "main.js": "/spdload-test/static/js/main.0c8b9174.js",
+    "index.html": "/spdload-test/index.html",
+    "main.9a16f77d.css.map": "/spdload-test/static/css/main.9a16f77d.css.map",
+    "main.0c8b9174.js.map": "/spdload-test/static/js/main.0c8b9174.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a16f77d.css",
+    "static/js/main.0c8b9174.js"
+  ]
+}
