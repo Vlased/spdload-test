@@ -75,7 +75,7 @@ const HomeBackground: React.FC<HomeBackgroundProps> = (props) => {
                 background="transparent"
                 width="231px"
                 height="42px"
-                margin="-80px 0 120px 0"
+                margin="-80px 0 100px 0"
                 zIndex="50"
                 onClick={scrollDown}
             >

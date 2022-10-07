@@ -40,7 +40,7 @@ const HomeCarousel: React.FC = () => {
     return (
         <>
             <FlexWrapper
-                margin="50px 0 30px 0"
+                margin="0 0 30px 0"
                 justify="space-between"
                 width="95%"
             >
