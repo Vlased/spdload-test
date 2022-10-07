@@ -1,25 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import { ApolloClient, InMemoryCache, ApolloProvider, HttpLink, from } from "@apollo/client";
+import styled from 'styled-components';
+import Header from './components/header/Header';
+import Favorite from './pages/favorite/Favorite';
+import Home from './pages/home/Home';
+import { onError } from "@apollo/client/link/error";
 
-function App() {
+const errorLink = onError(({ graphQLErrors, networkError }) => {
+  if (graphQLErrors)
+    graphQLErrors.forEach(({ message, locations, path }) =>
+      console.log(
+        `[GraphQL error]: Message: ${message}, Location: ${locations}, Path: ${path}`
+      )
+    );
+  if (networkError) console.log(`[Network error]: ${networkError}`);
+});
+
+const link = from([
+  errorLink,
+  new HttpLink({uri: "https://api.spacex.land/graphql/"})
+])
+
+const client = new ApolloClient({
+  cache: new InMemoryCache(),
+  link,
+})
+
+const AppWraper = styled.div`
+`
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ApolloProvider client={client}>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/favorite" element={<Favorite />} />
+      </Routes>  
+    </ApolloProvider>
   );
 }
 
