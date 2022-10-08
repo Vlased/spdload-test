@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react'
 import { Link, useLocation } from 'react-router-dom';
 import FlexWrapper from 'ui/flex-wrapper/FlexWrapper';
-import BlueButton from 'components/blue-button/BlueButton';
+import BlueButton from 'ui/blue-button/BlueButton';
 import GraySquare from 'ui/grey-square/GraySquare';
 
 const Aside: React.FC = () => {

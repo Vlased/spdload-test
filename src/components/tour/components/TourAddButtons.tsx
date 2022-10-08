@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react'
-import BlueButton from 'components/blue-button/BlueButton'
+import BlueButton from 'ui/blue-button/BlueButton'
 import { useRecoilState } from 'recoil'
 import { favoritesAtom } from 'recoil/atoms'
 import Button from 'ui/button/Button'

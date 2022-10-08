@@ -3,7 +3,7 @@ import ITour from 'interfaces/tour'
 import { useRecoilState } from 'recoil';
 import { favoritesAtom } from 'recoil/atoms';
 import FlexWrapper from 'ui/flex-wrapper/FlexWrapper';
-import BlueButton from 'components/blue-button/BlueButton';
+import BlueButton from 'ui/blue-button/BlueButton';
 import Button from 'ui/button/Button';
 import GraySquare from 'ui/grey-square/GraySquare';
 
